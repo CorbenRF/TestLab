@@ -1,0 +1,119 @@
+:root {
+  --main-text-color: #191C1F;
+  --secondary-text-color: #5E646A;
+  --btn-primary-color: #2A6CEA;
+  --btn-hover-color: #397DFF;
+  --btn-dis-bg-color: #ECEFF2;
+  --White: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.headline-1 {
+  color: var(--White, #FFF);
+  text-align: center;
+  /* Headline 1 */
+  font-family: Graphik LCG;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.headline-5 {
+  color: var(--Black, #191C1F);
+  text-align: center;
+  /* Headline 5 */
+  font-family: Graphik LCG;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.body-18 {
+  color: var(--White, #FFF);
+  text-align: center;
+  /* Body 18 */
+  font-family: Graphik LCG;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.body-16 {
+  font-family: Graphik LCG;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-color: transparent;
+  border-radius: 4px;
+  background: var(--btn-dis-bg-color);
+  cursor: pointer;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(42, 108, 234, 0.8), rgba(42, 108, 234, 0.8)), url("/images/main-hero-1920.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.nav {
+  padding: 25px 0;
+  justify-content: space-between;
+}
+.nav__link-text {
+  color: #fff;
+}
+.nav__link-text:hover {
+  border-bottom: 1px solid #fff;
+}
+.nav__link:not(:last-child) {
+  margin-right: 24px;
+}
+
+.hero {
+  max-width: 748px;
+  margin: 233px auto 313px auto;
+}
+.hero__title {
+  margin-bottom: 18px;
+}
+.hero__text {
+  margin-bottom: 92px;
+}
+.hero__btn {
+  width: max-content;
+  margin: 0 auto;
+}

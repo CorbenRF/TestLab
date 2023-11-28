@@ -1,0 +1,14 @@
+@media (max-width: 1240px) {
+    .nav {
+      padding: 28px 15px;
+      &__links {
+        display: none;
+      }
+    }
+    .burger {
+      &__icon-open {
+        display: block;
+      }
+      
+    }
+  }
