@@ -1,4 +1,5 @@
 :root {
+    --gray-bg: #f6f8fa;
     --main-text-color: #191C1F;
     --secondary-text-color: #5E646A;
     --btn-primary-color: #2A6CEA;
@@ -192,7 +193,24 @@ line-height: var(--lh-24); /* 150% */
             margin-right: 24px;
         }
     }
+    &__service {
+        position: relative;
+    }
+    &__links {
+        position: relative;
+    }
 }
+
+.burger {
+    width: 30px;
+    height: 23px;
+    display: none;
+    &__line {
+        height: 2px;
+        width: 100%;
+        background-color: white;
+    }
+  }
 
 .hero {
     max-width: 748px;
@@ -211,14 +229,158 @@ line-height: var(--lh-24); /* 150% */
 
 // qna
 .qna {
+    &__wrapper {
+        max-width: 1008px;
+    }
+    &__title {
+        margin-bottom: 41px;
+    }
     &__item {
+        padding: 24px 0;
         height: fit-content;
         border-top: 1px solid var(--btn-dis-bg-color);
         border-bottom: 1px solid var(--btn-dis-bg-color);
         outline: 0;
+        &-title p {
+            max-width: 80%;
+            text-align: left;
+        }
+        &-text {
+            text-align: left;
+        }
     }
 }
 //qna end
+
+// explain
+.explain {
+    &__title {
+        margin-bottom: 61px;
+    }
+    &__list {
+        margin-bottom: 80px;
+    }
+    &__item {
+        width: 280px;
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+        &-icon svg{
+            width: 72px;
+            height: 72px;
+        }
+    }
+    &__hero {
+        justify-content: space-between;
+    }
+    &__hero-text {
+        color:#5E646A;
+    }
+    &__hero-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & h3 {
+            margin-bottom: 18px;
+        }
+    }
+    &__hero-left, &__hero-right {
+        width: 49%;
+        height: 448px;
+    }
+}
+.pos-abs {
+    position: absolute;
+    max-width: 48%;
+    object-fit: scale-down;
+}
+//explain end
+
+// reviews
+.reviews {
+    background-color: var(--gray-bg);
+    &__wrapper {
+        padding-top: 57px;
+        padding-bottom: 45px;
+    }
+}
+.swiper {
+    &-wrapper {
+        width: 80%;
+    }
+    &-slide {
+        padding: 22px;
+        // width: 341px;
+        min-height: 316px;
+    }
+}
+//reviews end
+
+// article
+.article {
+    
+    background-color: var(--gray-bg);
+    &__wrapper {
+        padding: 68px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    &__item {
+        max-width: 48%;
+        &-title {
+            margin-bottom: 17px;
+        }
+        &:nth-child(1), &:nth-child(2) {
+            margin-bottom: 37px;
+        }
+    }
+}
+// article end
+
+//form
+.form {
+    &__title {
+        margin-bottom: 44px;
+    }
+    &__content {
+        justify-content: center;
+    }
+    &__left, &__right {
+        width: 384px;
+    }
+    &__left {
+        margin-right: 32px;
+    }
+    & input {
+        padding: 16px;
+        height: 64px;
+        margin-bottom: 32px;
+        border: none;
+        background-color: #f6f8fa;
+        color: var(--secondary-text-color);
+        text-align: left;
+        &::placeholder {
+            width: 352px;
+        height: 32px;
+            padding: 16px;
+        }
+        &:not(:last-of-type) {
+            margin-right: 32px;
+        }
+    }
+}
+//form end
+
+// footer
+.footer {
+    padding: 28px 0;
+    margin: 0 auto;
+    border-top: 1px solid var(--gray-bg);
+}
+// footer end
+
 
 // custom checkbox
 
